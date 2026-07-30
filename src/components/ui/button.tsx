@@ -6,10 +6,10 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 const variants: Record<NonNullable<ButtonProps["variant"]>, string> = {
-  primary: "bg-brand text-white hover:bg-brand-strong",
-  secondary: "bg-surface text-ink border border-line hover:bg-bg",
-  ghost: "bg-transparent text-brand hover:bg-brand/5",
-  danger: "bg-danger text-white hover:opacity-90",
+  primary: "bg-brand text-white hover:bg-brand-strong hover:text-white",
+  secondary: "bg-surface text-ink border border-line hover:bg-bg hover:text-ink",
+  ghost: "bg-transparent text-brand hover:bg-brand/5 hover:text-brand",
+  danger: "bg-danger text-white hover:opacity-90 hover:text-white",
 };
 
 const sizes: Record<NonNullable<ButtonProps["size"]>, string> = {
