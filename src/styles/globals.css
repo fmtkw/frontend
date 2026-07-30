@@ -11,6 +11,7 @@
   --color-brand-strong: var(--color-brand-strong);
   --color-accent: var(--color-accent);
   --color-accent-soft: var(--color-accent-soft);
+  --color-blue: var(--color-blue);
   --color-focus: var(--color-focus);
   --color-danger: var(--color-danger);
   --color-success: var(--color-success);
@@ -131,7 +132,7 @@ a {
   background:
     repeating-linear-gradient(
       135deg,
-      rgba(20, 18, 15, 0.07) 0 2px,
+      rgba(26, 95, 143, 0.07) 0 2px,
       transparent 2px 11px
     );
 }

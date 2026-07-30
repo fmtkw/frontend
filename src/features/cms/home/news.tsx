@@ -53,7 +53,7 @@ export function HomeNews() {
                   className="home-news-media__bg"
                   style={{
                     background:
-                      "radial-gradient(circle at 30% 20%, rgba(176,31,38,.55), transparent 50%), repeating-linear-gradient(135deg, rgba(255,255,255,.09) 0 2px, transparent 2px 11px)",
+                      "radial-gradient(circle at 30% 20%, rgba(18,160,106,.55), transparent 50%), repeating-linear-gradient(135deg, rgba(255,255,255,.09) 0 2px, transparent 2px 11px)",
                   }}
                 />
                 <span className="relative z-10 font-[family-name:var(--font-mono)] text-[11px] text-white/70">
@@ -83,7 +83,7 @@ export function HomeNews() {
                     className="home-news-media__bg"
                     style={{
                       background:
-                        "radial-gradient(circle at 70% 30%, rgba(224,106,99,.35), transparent 45%), repeating-linear-gradient(135deg, rgba(255,255,255,.09) 0 2px, transparent 2px 11px)",
+                        "radial-gradient(circle at 70% 30%, rgba(59,154,225,.4), transparent 45%), repeating-linear-gradient(135deg, rgba(255,255,255,.09) 0 2px, transparent 2px 11px)",
                     }}
                   />
                   <span className="relative z-10 font-[family-name:var(--font-mono)] text-[10px] text-white/55">

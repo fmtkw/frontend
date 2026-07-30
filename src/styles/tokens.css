@@ -1,17 +1,18 @@
 :root {
-  /* Visual language from Home FMTKW — ink + vermelho esportivo */
-  --color-bg: #ffffff;
+  /* Azul mais claro + verde — leitura aberta, menos “noite” */
+  --color-bg: #f3f9fc;
   --color-surface: #ffffff;
-  --color-ink: #14120f;
-  --color-muted: rgba(20, 18, 15, 0.68);
-  --color-line: rgba(20, 18, 15, 0.14);
-  --color-brand: #b01f26;
-  --color-brand-strong: #14120f;
-  --color-accent: #b01f26;
-  --color-accent-soft: #e06a63;
-  --color-focus: #b01f26;
-  --color-danger: #b01f26;
-  --color-success: #16794c;
+  --color-ink: #1a5f8f;
+  --color-muted: rgba(26, 95, 143, 0.72);
+  --color-line: rgba(26, 95, 143, 0.16);
+  --color-brand: #12a06a;
+  --color-brand-strong: #1a5f8f;
+  --color-accent: #12a06a;
+  --color-accent-soft: #7dd3fc;
+  --color-blue: #3b9ae1;
+  --color-focus: #3b9ae1;
+  --color-danger: #b42318;
+  --color-success: #12a06a;
 
   --radius-sm: 0;
   --radius-md: 0;

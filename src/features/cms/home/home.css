@@ -118,7 +118,8 @@
     105deg,
     #ffffff 0%,
     #ffffff 40%,
-    #ffb4b7 50%,
+    #9ae6c9 45%,
+    #7dd3fc 55%,
     #ffffff 60%,
     #ffffff 100%
   );
@@ -145,7 +146,17 @@
   transition: opacity 0.4s ease;
   background: radial-gradient(
     540px circle at var(--mx, 70%) var(--my, 35%),
-    rgba(176, 31, 38, 0.38),
+    rgba(18, 160, 106, 0.32),
+    rgba(59, 154, 225, 0.18) 42%,
+    transparent 58%
+  );
+}
+
+.home-spotlight--crisp {
+  opacity: 0.28;
+  background: radial-gradient(
+    420px circle at var(--mx, 70%) var(--my, 35%),
+    rgba(255, 255, 255, 0.16),
     transparent 55%
   );
 }
@@ -158,6 +169,12 @@
   animation: home-pulse 7s ease-in-out infinite;
 }
 
+.home-orb--soft {
+  filter: blur(64px);
+  opacity: 0.55;
+  animation: none;
+}
+
 .home-sweep {
   pointer-events: none;
   position: absolute;
@@ -168,7 +185,7 @@
     90deg,
     transparent,
     rgba(255, 255, 255, 0.08),
-    rgba(176, 31, 38, 0.25),
+    rgba(18, 160, 106, 0.25),
     transparent
   );
   animation: home-sweep 7.5s var(--home-ease) 1.4s infinite;
@@ -189,6 +206,11 @@
   user-select: none;
   transition: transform 0.25s ease-out;
   will-change: transform;
+}
+
+.home-watermark--crisp {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.14);
+  opacity: 0.7;
 }
 
 .home-scroll-cue {
@@ -217,7 +239,7 @@
   top: 0;
   width: 1px;
   height: 12px;
-  background: #b01f26;
+  background: #12a06a;
   animation: home-scroll-dot 1.8s var(--home-ease) infinite;
 }
 
@@ -228,7 +250,7 @@
   height: 2px;
   width: var(--home-progress, 0%);
   z-index: 60;
-  background: linear-gradient(90deg, #b01f26, #e06a63, #b01f26);
+  background: linear-gradient(90deg, #3b9ae1, #7dd3fc, #12a06a, #3b9ae1);
   background-size: 200% 100%;
   animation: home-border-run 2.4s linear infinite;
   pointer-events: none;
@@ -237,14 +259,14 @@
 .home-event-link {
   position: relative;
   overflow: hidden;
-  color: #14120f;
+  color: #1a5f8f;
 }
 
 .home-event-link::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: #14120f;
+  background: #1a5f8f;
   transform: scaleY(0);
   transform-origin: bottom;
   transition: transform 0.45s var(--home-ease);
@@ -272,7 +294,7 @@
   bottom: 0;
   height: 2px;
   width: 100%;
-  background: #b01f26;
+  background: #12a06a;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s var(--home-ease);
@@ -284,8 +306,8 @@
 }
 
 .home-event-link:hover .home-event-status {
-  border-color: #b01f26 !important;
-  background: #b01f26 !important;
+  border-color: #12a06a !important;
+  background: #12a06a !important;
   color: #ffffff !important;
 }
 
@@ -298,7 +320,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(20, 18, 15, 0.55));
+  background: linear-gradient(180deg, transparent 40%, rgba(26, 95, 143, 0.55));
   opacity: 0.7;
   transition: opacity 0.4s ease;
 }
@@ -346,7 +368,7 @@
 }
 
 .home-partner {
-  color: rgba(20, 18, 15, 0.55);
+  color: rgba(26, 95, 143, 0.55);
   transition:
     background 0.35s ease,
     color 0.35s ease,
@@ -354,7 +376,7 @@
 }
 
 .home-partner:hover {
-  background: #14120f !important;
+  background: #1a5f8f !important;
   color: #ffffff !important;
   transform: translateY(-3px);
 }
@@ -399,31 +421,31 @@
 /* Explicit contrast pairs (default + hover) */
 .home-btn--solid-light {
   background: #ffffff !important;
-  color: #14120f !important;
+  color: #1a5f8f !important;
 }
 
 .home-btn--solid-light:hover {
-  background: #b01f26 !important;
+  background: #12a06a !important;
   color: #ffffff !important;
 }
 
 .home-btn--solid-dark {
-  background: #14120f !important;
+  background: #1a5f8f !important;
   color: #ffffff !important;
 }
 
 .home-btn--solid-dark:hover {
-  background: #b01f26 !important;
+  background: #12a06a !important;
   color: #ffffff !important;
 }
 
 .home-btn--solid-brand {
-  background: #b01f26 !important;
+  background: #12a06a !important;
   color: #ffffff !important;
 }
 
 .home-btn--solid-brand:hover {
-  background: #14120f !important;
+  background: #1a5f8f !important;
   color: #ffffff !important;
 }
 
@@ -441,11 +463,11 @@
 
 .home-btn--on-brand {
   background: #ffffff !important;
-  color: #b01f26 !important;
+  color: #12a06a !important;
 }
 
 .home-btn--on-brand:hover {
-  background: #14120f !important;
+  background: #1a5f8f !important;
   color: #ffffff !important;
 }
 
@@ -461,7 +483,7 @@
 .home-section-line {
   height: 2px;
   width: 0;
-  background: #b01f26;
+  background: #12a06a;
   transition: width 1s var(--home-ease);
 }
 
